@@ -1,0 +1,27 @@
+.cur-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.arrow-decrease {
+  color: red;
+  fill: red;
+  transform: rotate(180deg);
+}
+.arrow-increase {
+  color: green;
+}
+.cur-box {
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.tile-box {
+  padding: 3px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}

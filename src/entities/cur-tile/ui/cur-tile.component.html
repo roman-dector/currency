@@ -1,0 +1,14 @@
+<div class="cur-tile">
+  <div>{{ curName }}</div>
+  <div class="tile-box">
+    <span class="cur-value">{{ curValue | number : ".2-2" }}</span>
+    <div>
+      <tui-svg
+        src="tuiIconSortDescending"
+        [style]="curGap === 0 ? 'visibility: hidden' : ''"
+        [class]="curGap > 0 ? 'arrow-increase' : 'arrow-decrease'"
+      ></tui-svg>
+      <span class="cur-gap">({{ curGap | number : ".2-2" }})</span>
+    </div>
+  </div>
+</div>

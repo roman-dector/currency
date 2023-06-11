@@ -1,0 +1,31 @@
+<div class="header column">
+  <div class="row">
+    <div class="title column">
+      <div class="base-cur">Currency RUB</div>
+      <div class="datetime">
+        {{ currentDate | date : "dd.MM.yyyy, hh:mm:ss" }}
+      </div>
+    </div>
+
+    <tui-svg
+      title="add currency"
+      src="tuiIconPlusCircleLarge"
+      class="add-cur-button"
+      (click)="toggleCurList()"
+    ></tui-svg>
+  </div>
+
+  <span *ngIf="curListVisible" style="font-size: 12px; margin-bottom: -10px"
+    >Click to add a currency to the watch list:</span
+  >
+  <div *ngIf="curListVisible" class="new-cur-list row">
+    <div
+      *ngFor="let cur of currencies$ | async"
+      [style]="cur.visible ? 'display: none' : ''"
+      class="cur-item"
+      (click)="addCurToList(cur.name)"
+    >
+      {{ cur.name }}
+    </div>
+  </div>
+</div>

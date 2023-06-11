@@ -1,0 +1,17 @@
+.cur-list {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+.cur-list-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remove-box {
+  color: gray;
+}
+.remove-box:hover {
+  color: red;
+}

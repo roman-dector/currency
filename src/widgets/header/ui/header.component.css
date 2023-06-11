@@ -1,0 +1,50 @@
+.header {
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.add-button {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.title {
+  gap: 4px;
+}
+.base-cur {
+  font-size: 20px;
+  font-weight: 600;
+}
+.datetime {
+  display: flex;
+  gap: 10px;
+
+  font-size: 14px;
+}
+.add-cur-button:hover {
+  fill: #b8b8b8;
+}
+
+.new-cur-list {
+  justify-content: center;
+}
+.cur-item {
+  padding: 3px;
+}
+.cur-item:hover {
+  border-radius: 4px;
+  background-color: #01c201c6;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<div class="cur-list">
+  <div
+    *ngFor="let cur of currencies$ | async"
+    [style]="cur.visible ? '' : 'display: none'"
+    class="cur-list-item"
+  >
+    <cur-tile [curName]="cur.name" [curValue]="cur.value" [curGap]="cur.gap" />
+    <tui-svg
+      title="hide currency"
+      src="tuiIconSpoilerDeleteLarge"
+      (click)="hideListItem(cur.name)"
+      class="remove-box"
+    ></tui-svg>
+  </div>
+</div>

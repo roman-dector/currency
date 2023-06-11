@@ -1,0 +1,1 @@
+export { CurTile } from './ui';
